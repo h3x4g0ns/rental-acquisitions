@@ -20,8 +20,9 @@ The goal is to create a dashboard to perform analysis on rental markets and make
 ## Technology Stacks
 
 **Backend**
+- [Bridge](https://bridgedataoutput.com/docs/platform/): MLS api
 - Flask
 - Celery/Redis
 
 **Frontend**
-- [tremor](https://github.com/tremorlabs/tremor)
+- [tremor](https://github.com/tremorlabs/tremor): React dashboard library
