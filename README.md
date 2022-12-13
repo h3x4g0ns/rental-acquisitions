@@ -26,3 +26,8 @@ The goal is to create a dashboard to perform analysis on rental markets and make
 
 **Frontend**
 - [tremor](https://github.com/tremorlabs/tremor): React dashboard library
+
+
+### Useful Links
+
+- [building dashboard with tremor](https://blog.logrocket.com/build-react-dashboard-tremor/)
