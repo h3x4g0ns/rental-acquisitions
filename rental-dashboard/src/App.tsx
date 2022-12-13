@@ -1,17 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import "@tremor/react/dist/esm/tremor.css";
 import "./index.css";
-import { Flex, Block, BadgeDelta, Card, Text, Metric, ProgressBar} from "@tremor/react";
+import { Flex, Block, BadgeDelta, Card, Text, Metric, ProgressBar } from "@tremor/react";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
         <Card maxWidth="max-w-lg">
           <Flex alignItems="items-start">
             <Block>
