@@ -1,14 +1,13 @@
 import React from 'react';
-import "@tremor/react/dist/esm/tremor.css";
-import "./index.css";
 import { Flex, Block, BadgeDelta, Card, Text, Metric, ProgressBar } from "@tremor/react";
+import Login from "./Login"
+import "@tremor/react/dist/esm/tremor.css";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <br />
-        <br />
+        <Login />
         <br />
         <br />
         <Card maxWidth="max-w-lg">
@@ -25,7 +24,7 @@ class App extends React.Component {
           </Flex>
           <ProgressBar percentageValue={50} marginTop="mt-2" />
         </Card>
-      </div>
+      </div >
     );
   }
 }
