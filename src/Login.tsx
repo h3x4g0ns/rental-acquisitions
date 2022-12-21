@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PocketBase from 'pocketbase';
 
 class Login extends Component {
   handleFormSubmit = () => {
@@ -10,7 +11,7 @@ class Login extends Component {
       <div className='h-screen flex bg-gray-bg1'>
         <div className='w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16'>
           <h1 className='text-2xl font-medium text-primary mt-4 mb-8 text-center'>
-            Log in to your account 🔐
+            Log in to your account
           </h1>
 
           <form onSubmit={this.handleFormSubmit}>
@@ -32,19 +33,14 @@ class Login extends Component {
                 placeholder='Your Password'
               />
             </div>
-            <div className='flex justify-center items-center'>
-              <button className='bg-gray-700 text-white py-2 px-4 rounded-md border border-green focus:border-green-dark'>
-                Login
-              </button>
-            </div>
 
-            {/* <div className='flex justify-center items-center mt-6'>
+            <div className='flex justify-center items-center mt-6'>
               <button
-                className={`bg-green py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark`}
+                className={`bg-gray-700 py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark`}
               >
                 Login
               </button>
-            </div> */}
+            </div>
           </form>
         </div>
       </div>
