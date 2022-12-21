@@ -29,7 +29,21 @@
 </script>
 
 {#if $currentUser}
-  <p class="text-xl">Welcome, {$currentUser.name}!</p>
+  <div
+    class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16"
+  >
+    <h1 class="text-2xl font-medium text-primary mt-4 mb-8 text-center">
+      You are logged in as {$currentUser.username}
+    </h1>
+    <div class="flex justify-center items-center mt-2">
+      <button
+        class="bg-gray-200 py-2 px-4 text-sm rounded border border-green focus:outline-none focus:border-green-dark"
+        on:click={logout}
+      >
+        Logout
+      </button>
+    </div>
+  </div>
 {:else}
   <div
     class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16"
