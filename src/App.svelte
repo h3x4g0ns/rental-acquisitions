@@ -1,4 +1,7 @@
 <script lang="ts">
+  import Login from "./lib/Login.svelte";
 </script>
 
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="h-screen flex bg-gray-bg1">
+  <Login />
+</div>
