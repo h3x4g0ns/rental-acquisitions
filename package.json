@@ -13,6 +13,9 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "@tsconfig/svelte": "^3.0.0",
     "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
+    "flowbite": "^1.5.5",
+    "flowbite-svelte": "^0.29.5",
     "postcss": "^8.4.20",
     "svelte": "^3.54.0",
     "svelte-check": "^2.10.0",
@@ -22,6 +25,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "pocketbase": "^0.9.0"
   }
 }

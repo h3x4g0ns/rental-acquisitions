@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { writable } from "svelte/store";
   import { currentUser, pb } from "./pocketbase";
 
   let username: string;
@@ -29,7 +30,7 @@
 </script>
 
 {#if $currentUser}
-  <div
+  <!-- <div
     class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16"
   >
     <h1 class="text-2xl font-medium text-primary mt-4 mb-8 text-center">
@@ -43,7 +44,7 @@
         Logout
       </button>
     </div>
-  </div>
+  </div> -->
 {:else}
   <div
     class="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16"
