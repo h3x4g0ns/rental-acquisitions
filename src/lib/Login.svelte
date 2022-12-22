@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { writable } from "svelte/store";
-  import { currentUser, pb } from "./pocketbase";
+  import { currentUser, pb } from "./Pocketbase";
+  import { Button } from "flowbite-svelte";
 
   let username: string;
   let password: string;
@@ -75,20 +75,12 @@
       </div>
 
       <div class="flex justify-center items-center mt-2">
-        <button
-          class="bg-gray-700 py-2 px-4 text-sm text-white rounded border border-green focus:outline-none focus:border-green-dark"
-          on:click={login}
+        <Button size="sm" on:click={login} gradient color="purpleToPink"
+          >Login</Button
         >
-          Login
-        </button>
       </div>
       <div class="flex justify-center items-center mt-2">
-        <button
-          class="bg-gray-200 py-2 px-4 text-sm rounded border border-green focus:outline-none focus:border-green-dark"
-          on:click={signUp}
-        >
-          Sign Up
-        </button>
+        <Button size="sm" on:click={signUp}>Sign Up</Button>
       </div>
     </form>
   </div>

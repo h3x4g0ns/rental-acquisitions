@@ -1,6 +1,6 @@
 <script lang="ts">
   import Login from "./lib/Login.svelte";
-  import { currentUser } from "./lib/pocketbase";
+  import { currentUser, logOut } from "./lib/Pocketbase";
   import {
     Navbar,
     NavBrand,
@@ -28,7 +28,7 @@
         </span>
       </NavBrand>
       <div class="flex md:order-2">
-        <Button size="sm">Get started</Button>
+        <Button size="sm" on:click={logOut}>Logout</Button>
         <NavHamburger on:click={toggle} />
       </div>
       <NavUl {hidden}>
